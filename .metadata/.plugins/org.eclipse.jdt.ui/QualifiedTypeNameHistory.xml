@@ -1,2 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="android.view.View"/>
+<fullyQualifiedTypeName name="com.example.myfirstapp.R.id"/>
+<fullyQualifiedTypeName name="android.content.Intent"/>
+<fullyQualifiedTypeName name="com.example.myfirstapp.MainActivity"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="android.widget.EditText"/>
+<fullyQualifiedTypeName name="com.example.crazytipcalc.R.id"/>
+<fullyQualifiedTypeName name="android.text.TextWatcher"/>
+<fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+</qualifiedTypeNameHistroy>
