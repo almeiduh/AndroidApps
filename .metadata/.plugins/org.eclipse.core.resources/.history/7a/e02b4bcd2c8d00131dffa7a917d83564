@@ -7,7 +7,6 @@ import android.text.TextWatcher;
 import android.view.Menu;
 import android.widget.EditText;
 import android.widget.SeekBar;
-import android.widget.SeekBar.OnSeekBarChangeListener;
 
 public class CrazyTipCalc extends Activity {
 
@@ -25,7 +24,7 @@ public class CrazyTipCalc extends Activity {
 	EditText tipAmountEt;
 	EditText finalBillEt;
 	
-	SeekBar changeTipSeekBar;
+	SeekBar seekBar;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -49,38 +48,13 @@ public class CrazyTipCalc extends Activity {
 		tipAmountEt = (EditText) findViewById(R.id.tipEditText);
 		finalBillEt = (EditText) findViewById(R.id.finalBillEditText);
 		
-		changeTipSeekBar = (SeekBar) findViewById(R.id.changeTipSeekBar);
-		
-		changeTipSeekBar.setOnSeekBarChangeListener(seekBarChangeListner);
+		seekBar = (SeekBar) findViewById(R.id.changeTipSeekBar);
 		
 		billBeforeTipEt.addTextChangedListener(billBeforeTipListner);
 		
 		
 	}
 
-	private OnSeekBarChangeListener seekBarChangeListner = new OnSeekBarChangeListener() {
-		
-		@Override
-		public void onStopTrackingTouch(SeekBar arg0) {
-			// TODO Auto-generated method stub
-			
-		}
-		
-		@Override
-		public void onStartTrackingTouch(SeekBar arg0) {
-			// TODO Auto-generated method stub
-			
-		}
-		
-		@Override
-		public void onProgressChanged(SeekBar arg0, int arg1, boolean arg2) {
-			tipAmount = (changeTipSeekBar.getProgress()) * 0.01;
-			tipAmountEt.setText(String.format("%.02f", tipAmount));
-			
-			updateTipAndFinalBill();
-		}
-	};
-	
 	
 	private TextWatcher billBeforeTipListner = new TextWatcher() {
 		

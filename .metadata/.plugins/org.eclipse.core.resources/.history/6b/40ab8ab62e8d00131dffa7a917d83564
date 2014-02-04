@@ -76,8 +76,6 @@ public class CrazyTipCalc extends Activity {
 		public void onProgressChanged(SeekBar arg0, int arg1, boolean arg2) {
 			tipAmount = (changeTipSeekBar.getProgress()) * 0.01;
 			tipAmountEt.setText(String.format("%.02f", tipAmount));
-			
-			updateTipAndFinalBill();
 		}
 	};
 	

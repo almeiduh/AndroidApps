@@ -82,7 +82,7 @@
         android:text="@string/change_tip_text_view" />
 
     <SeekBar
-        android:id="@+id/changeTipSeekBar"
+        android:id="@+id/seekBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/changeTipTextView"

@@ -54,39 +54,24 @@
         android:inputType="numberDecimal"
         android:text="@string/tip_edit_text" />
 
-    <EditText
-        android:id="@+id/finalBillEditText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:ems="5"
-        android:inputType="numberDecimal"
-        android:text="@string/final_bill_edit_text" />
-
     <TextView
         android:id="@+id/finalBilltextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/finalBillEditText"
-        android:layout_centerHorizontal="true"
-        android:text="@string/final_text_view" />
-
-    <TextView
-        android:id="@+id/changeTipTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/billTextView"
         android:layout_below="@+id/BillEditText"
-        android:layout_marginTop="36dp"
-        android:text="@string/change_tip_text_view" />
+        android:layout_marginTop="35dp"
+        android:text="@string/final_text_view" />
 
-    <SeekBar
-        android:id="@+id/changeTipSeekBar"
-        android:layout_width="match_parent"
+    <EditText
+        android:id="@+id/finalBillEditText"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/changeTipTextView"
-        android:layout_alignLeft="@+id/BillEditText"
-        android:progress="15" />
+        android:layout_alignBaseline="@+id/finalBilltextView"
+        android:layout_alignBottom="@+id/finalBilltextView"
+        android:layout_toRightOf="@+id/finalBilltextView"
+        android:ems="5"
+        android:inputType="numberDecimal"
+        android:text="@string/final_bill_edit_text" />
 
 </RelativeLayout>
