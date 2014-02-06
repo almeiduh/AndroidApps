@@ -32,12 +32,18 @@ public final class R {
     }
     public static final class id {
         public static final int TableLayout1=0x7f090000;
-        public static final int action_settings=0x7f09000e;
+        public static final int action_settings=0x7f090016;
+        public static final int changeTextView=0x7f090012;
+        public static final int companyNameTextView=0x7f09000c;
+        public static final int dailyPriceRangeTextView=0x7f090013;
+        public static final int dayHighTextView=0x7f090010;
+        public static final int dayLowTextView=0x7f09000f;
         public static final int deleteStocksButton=0x7f09000b;
         public static final int enterStockSymbolButton=0x7f090004;
         public static final int enterSymbolTextView=0x7f090002;
-        public static final int quoteFromWebButton=0x7f09000d;
-        public static final int stockQuoteButton=0x7f09000c;
+        public static final int lastPriceTextView=0x7f090011;
+        public static final int quoteFromWebButton=0x7f090015;
+        public static final int stockQuoteButton=0x7f090014;
         public static final int stockScrollView=0x7f090008;
         public static final int stockSymbolEditText=0x7f090003;
         public static final int stockSymbolTextView=0x7f090006;
@@ -46,13 +52,17 @@ public final class R {
         public static final int tableRow2=0x7f090005;
         public static final int tableRow3=0x7f090007;
         public static final int tableRow4=0x7f09000a;
+        public static final int yearHighTextView=0x7f09000e;
+        public static final int yearLowTextView=0x7f09000d;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int stock_quote_row=0x7f030001;
+        public static final int activity_stock_info=0x7f030001;
+        public static final int stock_quote_row=0x7f030002;
     }
     public static final class menu {
         public static final int main=0x7f080000;
+        public static final int stock_info=0x7f080001;
     }
     public static final class string {
         public static final int action_settings=0x7f060001;
@@ -66,6 +76,7 @@ public final class R {
         public static final int enter_stock_symbol=0x7f060003;
         public static final int get_stock_quote=0x7f06000c;
         public static final int go_to_website=0x7f06000d;
+        public static final int hello_world=0x7f060018;
         public static final int invalid_stock_symbol=0x7f060009;
         public static final int last_trade_price_only=0x7f060015;
         public static final int missing_stock_symbol=0x7f060008;

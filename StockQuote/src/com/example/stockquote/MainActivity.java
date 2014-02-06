@@ -2,10 +2,12 @@ package com.example.stockquote;
 
 import java.util.Arrays;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -16,6 +18,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ScrollView;
 import android.widget.TableLayout;
+import android.widget.TableRow;
 import android.widget.TextView;
 
 public class MainActivity extends Activity {
@@ -87,8 +90,17 @@ public class MainActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-				//TODO
+				TableRow parentTable = (TableRow) v.getParent();
 				
+				TextView stockTextView = (TextView) parentTable.findViewById(R.id.stockSymbolTextView);
+				
+				String stockSymbol = stockTextView.getText().toString();
+				
+				Intent intent = new Intent(MainActivity.this, StockInfoActivity.class);
+				
+				intent.putExtra(STOCK_SYMBOL, stockSymbol);				
+				
+				startActivity(intent);
 			}
 		});
 		
@@ -96,8 +108,17 @@ public class MainActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
+				TableRow parentTable = (TableRow) v.getParent();
 				
+				TextView stockTextView = (TextView) parentTable.findViewById(R.id.stockSymbolTextView);
+				
+				String stockSymbol = stockTextView.getText().toString();
+				
+				String stockUrl = getString(R.string.yahoo_stock_url) + stockSymbol;
+				
+				Intent webIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(stockUrl));
+				
+				startActivity(webIntent);
 			}
 		});
 		
